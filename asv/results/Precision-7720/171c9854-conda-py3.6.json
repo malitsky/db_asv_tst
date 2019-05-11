@@ -1,0 +1,85 @@
+{
+    "benchmark_version": {
+        "benchmarks.MemSuite.mem_list": "abe86bab484550a681c61d7bb6eb081fbd37eb6d5009eba1df85c935530577b9",
+        "benchmarks.TimeSuite.time_iterkeys": "8cbbcf6e9f798af859479108fa2aedee542bd626e61d71f54acd8a0d6300e6e6",
+        "benchmarks.TimeSuite.time_keys": "86e015a3c40c52da31e4185fff7c7176c38c5e1e1e4aba71912db0b388225191",
+        "benchmarks.TimeSuite.time_range": "cc3e85248a6284df968bcf8afe866da285261eb2487c10e9dd9e2d17a05deb47",
+        "benchmarks.TimeSuite.time_xrange": "473d76d807f9873b39e527c0d0c3794e8e30e367afdf2614cb2ab190b5e120c1"
+    },
+    "commit_hash": "171c98543d7a06deee2d8518e54d4709653880b3",
+    "date": 1552339384000,
+    "ended_at": {
+        "benchmarks.MemSuite.mem_list": 1557605279521,
+        "benchmarks.TimeSuite.time_iterkeys": 1557605279012,
+        "benchmarks.TimeSuite.time_keys": 1557605279724,
+        "benchmarks.TimeSuite.time_range": 1557605279926,
+        "benchmarks.TimeSuite.time_xrange": 1557605279469
+    },
+    "env_name": "conda-py3.6",
+    "params": {
+        "arch": "x86_64",
+        "cpu": "Intel(R) Xeon(R) CPU E3-1505M v6 @ 3.00GHz",
+        "machine": "Precision-7720",
+        "os": "Linux 4.15.0-48-generic",
+        "python": "3.6",
+        "ram": "65830768"
+    },
+    "profiles": {},
+    "python": "3.6",
+    "requirements": {},
+    "results": {
+        "benchmarks.MemSuite.mem_list": 2112,
+        "benchmarks.TimeSuite.time_iterkeys": null,
+        "benchmarks.TimeSuite.time_keys": {
+            "result": [
+                4.557216849263317e-06
+            ],
+            "stats": [
+                {
+                    "ci_99": [
+                        4.3322104268983734e-06,
+                        5.036692482055157e-06
+                    ],
+                    "max": 5.036692482055157e-06,
+                    "mean": 4.60510532678504e-06,
+                    "min": 4.3322104268983734e-06,
+                    "number": 2647,
+                    "q_25": 4.449077823951645e-06,
+                    "q_75": 4.749317623724972e-06,
+                    "repeat": 10,
+                    "std": 2.1949219005744447e-07
+                }
+            ]
+        },
+        "benchmarks.TimeSuite.time_range": {
+            "result": [
+                1.8112497881355954e-05
+            ],
+            "stats": [
+                {
+                    "ci_99": [
+                        1.785368220338982e-05,
+                        1.8294841807909626e-05
+                    ],
+                    "max": 1.8294841807909626e-05,
+                    "mean": 1.8065296751412442e-05,
+                    "min": 1.785368220338982e-05,
+                    "number": 708,
+                    "q_25": 1.7899178319209048e-05,
+                    "q_75": 1.818509392655368e-05,
+                    "repeat": 10,
+                    "std": 1.547329712021724e-07
+                }
+            ]
+        },
+        "benchmarks.TimeSuite.time_xrange": null
+    },
+    "started_at": {
+        "benchmarks.MemSuite.mem_list": 1557605279469,
+        "benchmarks.TimeSuite.time_iterkeys": 1557605278961,
+        "benchmarks.TimeSuite.time_keys": 1557605279522,
+        "benchmarks.TimeSuite.time_range": 1557605279724,
+        "benchmarks.TimeSuite.time_xrange": 1557605279417
+    },
+    "version": 1
+}

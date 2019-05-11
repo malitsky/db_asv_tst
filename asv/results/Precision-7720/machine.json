@@ -1,0 +1,8 @@
+{
+    "arch": "x86_64",
+    "cpu": "Intel(R) Xeon(R) CPU E3-1505M v6 @ 3.00GHz",
+    "machine": "Precision-7720",
+    "os": "Linux 4.15.0-48-generic",
+    "ram": "65830768",
+    "version": 1
+}

@@ -6,6 +6,12 @@ cache:
     - $HOME/.cache/pip
     - $HOME/.ccache  # https://github.com/travis-ci/travis-ci/issues/5853
 
+env:
+  global:
+    # Doctr deploy key for malitsky/db_asv_tst
+    - secure: "LwZWVOaubu2EIQ/oRsKihOfS8H6s5JiwvPwd3I25nbRSzH/Jely7Hz95/mKYO8VcTdDS97IjaSgN8pJfBSSDn8w8NJZEOyPYPIZj1ZCJ0hpEcb2WnilzBouyk2d3yMtP+THqoI6AQOt/fdQ0XRZCcmttnAijhOdl0g6E8icV3jsHMZpF+b1UoSPzTqAFTRC1693nXQRnHKsI0Aw4/f9zNpe+mcOLxtEdTrVB20JZQfX6tJR8EYgvq74WfW4doHYmTFAXFt9YieCTxWuDGJYbq2qStoQ3sOyE0pndluPxmOPlQClQIuHtgefd/RcHedgpjmEYHCcuItSOgPC+y4KdHTOORJBrYDqDah9QShF3FkZOlsEG4NXkGBVHja1iJZ/zX9V+0F+ZJnaKB+znukLI5tY1QXP3jFLe6u9SnXGJahqjDI3RUpRR0u7zKpL0+wabNc1Xs6XGfL7dVKHKGB0lWrCZXADzVlEpxngBwjZzyGUBbu99PHC+AV5f281lkQSdpCWg/9VmnLH/98DaQEvSphgVQXPoDeDDJ1+8ef+XlXfZpNP78/TO+b77jWn6OzHR3LYZUfXvCdsIUEcRPwXnpb8b+FJpSIeJFdKzzzXy/ckK2kLzK9dByGUoIa9YS8lMfUUJw/zzR7vlLZ1T9p2cqrJF6qbL2i97qizvgsrnI4A="
+
+
 install:
   # Install this package and the packages listed in requirements.txt.
   - pip install .
@@ -13,8 +19,6 @@ install:
   - pip install -r requirements-dev.txt
 
 script:
-  - coverage run -m pytest  # Run the tests and check for test coverage.
-  - coverage report -m  # Generate test coverage report.
-  - codecov  # Upload the report to codecov.
-  - flake8 --max-line-length=115  # Enforce code style (but relax line length limit a bit).
-  - make -C docs html  # Build the documentation.
+  - set -e # If any of the following steps fail, just stop at that point.
+  - pip install doctr
+  - doctr deploy --built-docs asv/html .  # Publish the documentation.
