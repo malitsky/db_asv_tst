@@ -3,17 +3,9 @@
 ./asv_ui.js
 ./error.html
 ./graphdisplay.js
-./graphs/arch-x86_64/branch-master/cpu-Intel(R) Xeon(R) CPU E3-1505M v6 @ 3.00GHz/machine-Precision-7720/os-Linux 4.15.0-48-generic/python-3.6/ram-65830768/benchmarks.MemSuite.mem_list.json
-./graphs/arch-x86_64/branch-master/cpu-Intel(R) Xeon(R) CPU E3-1505M v6 @ 3.00GHz/machine-Precision-7720/os-Linux 4.15.0-48-generic/python-3.6/ram-65830768/benchmarks.TimeSuite.time_iterkeys.json
-./graphs/arch-x86_64/branch-master/cpu-Intel(R) Xeon(R) CPU E3-1505M v6 @ 3.00GHz/machine-Precision-7720/os-Linux 4.15.0-48-generic/python-3.6/ram-65830768/benchmarks.TimeSuite.time_keys.json
-./graphs/arch-x86_64/branch-master/cpu-Intel(R) Xeon(R) CPU E3-1505M v6 @ 3.00GHz/machine-Precision-7720/os-Linux 4.15.0-48-generic/python-3.6/ram-65830768/benchmarks.TimeSuite.time_range.json
-./graphs/arch-x86_64/branch-master/cpu-Intel(R) Xeon(R) CPU E3-1505M v6 @ 3.00GHz/machine-Precision-7720/os-Linux 4.15.0-48-generic/python-3.6/ram-65830768/benchmarks.TimeSuite.time_xrange.json
-./graphs/arch-x86_64/branch-master/cpu-Intel(R) Xeon(R) CPU E3-1505M v6 @ 3.00GHz/machine-Precision-7720/os-Linux 4.15.0-48-generic/python-3.6/ram-65830768/summary.json
-./graphs/summary/benchmarks.MemSuite.mem_list.json
-./graphs/summary/benchmarks.TimeSuite.time_iterkeys.json
-./graphs/summary/benchmarks.TimeSuite.time_keys.json
-./graphs/summary/benchmarks.TimeSuite.time_range.json
-./graphs/summary/benchmarks.TimeSuite.time_xrange.json
+./graphs/arch-x86_64/branch-master/cpu-Intel(R) Xeon(R) CPU E3-1505M v6 @ 3.00GHz/machine-Precision-7720/os-Linux 4.15.0-48-generic/pip+pymongo-3.8.0/pip+pytest-3.10.1/python-3.6/ram-65830768/benchmarks.DatabrokerSuite.time_bulk_insert.json
+./graphs/arch-x86_64/branch-master/cpu-Intel(R) Xeon(R) CPU E3-1505M v6 @ 3.00GHz/machine-Precision-7720/os-Linux 4.15.0-48-generic/pip+pymongo-3.8.0/pip+pytest-3.10.1/python-3.6/ram-65830768/summary.json
+./graphs/summary/benchmarks.DatabrokerSuite.time_bulk_insert.json
 ./index.html
 ./index.json
 ./info.json
